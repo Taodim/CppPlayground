@@ -12,24 +12,73 @@
 
 using namespace std;
 
-int main()
-{
-	//TESTING Vectors
-    cout << "Creating Vector..." << endl;
+int createVector() {
+	cout << "Creating Vector..." << endl;
+	vector<int> intVect;
+	intVect.push_back(1);
+	intVect.push_back(2);
+	intVect.push_back(3);
+	intVect.push_back(4);
+	intVect.push_back(5);
 
-    vector<int> intVect;
+	for (int i = 0; i < intVect.size(); i++){
+		cout << intVect[i] << ", ";
+	}
 
-    intVect.push_back(1);
-    intVect.push_back(2);
-    intVect.push_back(3);
-    intVect.push_back(4);
-    intVect.push_back(5);
+	cout << binary_search(intVect.begin(), intVect.end(), 9) << endl;
 
-    for (int i = 0; i < intVect.size(); i++){
-    	cout << intVect[i] << ", ";
-    }
-
-    cout << binary_search(intVect.begin(), intVect.end(), 9) << endl;
-
-    return 0;
+	return 0;
 }
+
+int testIO(){
+	string input;
+	cin >> input;
+	cout << "You typed in: " << input << endl;
+
+	return 0;
+}
+
+int testSwitch() {
+	int num, sum;
+	cout << "Type in a number: " <<endl;
+	cin >> num;
+
+	switch(num) {
+		case 0:
+			sum = ++num;
+			break;
+		case 1:
+			sum = ++num;
+			break;
+		default:
+			sum = num;
+	}
+	cout << num << " + 1 = " << sum << endl;
+	return 0;
+}
+
+int testCondOp(int a, int b) {
+	cout << (a > b ? a : b ) << " is larger" << endl;
+	return 0;
+}
+
+
+
+//====** MAIN METHOD RIGHT HUR! *====
+int main() {
+
+
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
