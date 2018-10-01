@@ -63,6 +63,13 @@ int testCondOp(int a, int b) {
 }
 
 
+int testArray(int size) {
+	int array[size];
+	for (int i = 0; i < size; i++){
+		array[i] = i+1;
+		cout << "Array [" << i << "] = " << array[i] << endl;
+	}
+}
 
 //====** MAIN METHOD RIGHT HUR! *====
 int main() {
