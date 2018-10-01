@@ -69,7 +69,9 @@ int testArray(int size) {
 		array[i] = i+1;
 		cout << "Array [" << i << "] = " << array[i] << endl;
 	}
+	return 0;
 }
+
 
 //====** MAIN METHOD RIGHT HUR! *====
 int main() {
